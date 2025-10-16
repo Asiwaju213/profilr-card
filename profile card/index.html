@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   <article data-test-id="test-profile-card">
+        <header>
+            <figure data-testid="test-user-avatar">
+                    <img src="pp.jpg" alt="My profile Picture" class="image">
+                </figure>
+            <h2 data-testid="test-username" class="name">
+                KALEJAIYE MARVELLOUS
+            </h2>
+        </header>
+            <p data-testid="test-user-bio">
+                Kalejaiye Marvellous by name, A Frontend web Developer and also aspiring to be a full-stack Software Developer.
+                <br>
+                I'm passionate about turning creative ideas into responsive, user-friendly web experiences.
+            </p>
+            <span data-testid="test-user-time">
+                00:00:00</span>
+                
+                <nav data-testid="test-user-social-links">
+                    <h3>Social media links</h3>
+                    <ul>
+                        <li data-testid="test-user-social-facebook" href="#">Facebook</li>
+                        <li data-testid="test-user-social-linkedin" href="#">Linkedin</li>
+                        <li data-testid="test-user-social-X" href="#">X</li>
+                        <li data-testid="test-user-social-tiktok" href="#">Tiktok</li>
+                    </ul>
+                </nav>
+                <section>
+                    <h3>Hobbies</h3>
+                    <ul data-testid="test-user-hobbies">
+                        <li>Building side projects</li>
+                        <li>Learnng new tech</li>
+                        <li>Attending tech meetup</li>
+                        <li>Travelling</li>
+                    </ul>
+                    <h3>Dislikes</h3>
+                    <ul data-testid="test-user-dislikes">
+                        <li>Constantly changing frameworks</li>
+                        <li>Debugging complex UI</li>
+                        <li>Cross-browser issue</li>
+                    </ul>
+                </section>
+   </article>
+</body>
+<script src="index.js"></script>
+</html>
