@@ -94,6 +94,13 @@ nav a:hover {
   text-decoration: underline;
 }
 
+nav a:focus {
+  outline: 2px solid #1976d2;
+  outline-offset: 3px;
+  background: #e3f2fd;
+  color: #0d47a1;
+}
+
 section ul li {
   color: #444;
 }
