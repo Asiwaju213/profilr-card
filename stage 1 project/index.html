@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div>
+        <h1 class="contact">CONTACT US</h1>
+    <form action="/submit" method="post" id="form" aria-describedby="formHelp">
+       <div class="name">
+         <label for="name">NAME:</label>
+        <input 
+        data-testid="test-contact-name" 
+        type="text" 
+        id="name" 
+        placeholder=" Enter your full name" 
+        required
+        aria-required="true">
+       </div>
+        <br>
+        <br>
+
+       <div class="name">
+         <label for="email">EMAIL:</label>
+        <input 
+        data-testid="test-contact-email" 
+        type="email" 
+        id="email" 
+        placeholder="Enter your email" 
+        required
+        aria-required="true">
+       </div>
+        <br>
+        <br>
+
+        <div class="message">
+            <label class="lab" for="subject">SUBJECT:</label>
+        <textarea 
+        data-testid="test-contact-subject" 
+        id="subject" 
+        placeholder="Enter your subject" 
+        required 
+        rows="2" 
+        cols="25"
+        minlength="10"
+        aria-required="true"></textarea>
+        </div>
+        <br>
+        <br>
+
+        <div class="message">
+            <label class="lab" for="message">MESSAGE:</label>
+        <textarea 
+        data-testid="test-contact-message" 
+        id="mess" 
+        minlength="10" 
+        placeholder="Enter your messsage" 
+        required 
+        rows="2" 
+        cols="25"
+        aria-required="true"></textarea>
+        </div>
+        <br>
+        <br>
+
+    <button class="btn" type="submit" data-testid="test-contact-submit">SUBMIT</button>
+    </form>
+    <div 
+    data-testid="test-contact-success" 
+    id="message"
+    role="alert"
+    aria-live="assertive">✅Submission Successful</div>
+    </div>
+</body>
+<script src="contact.js"></script>
+</html>
